@@ -1,0 +1,45 @@
+gui:
+  nerdFontsVersion: "3"
+  showFileIcons: true
+  border: rounded
+  scrollOffBehavior: margin
+  scrollHeight: 2
+  scrollOffMargin: 2
+  animateExplosion: true
+  useHunkModeInStagingView: false
+  statusPanelView: allBranchesLog
+  theme:
+    activeBorderColor:
+    - '#b7bdf8'
+    - bold
+    inactiveBorderColor:
+      - '#a5adcb'
+    optionsTextColor:
+      - '#8aadf4'
+    selectedLineBgColor:
+      - '#363a4f'
+    cherryPickedCommitBgColor:
+      - '#494d64'
+    cherryPickedCommitFgColor:
+      - '#b7bdf8'
+    unstagedChangesColor:
+      - '#ed8796'
+    defaultFgColor:
+      - '#cad3f5'
+    searchingActiveBorderColor:
+      - '#eed49f'
+
+  authorColors:
+    '*': '#b7bdf8'
+
+os:
+  editPreset: nvim
+
+keybinding:
+  universal:
+    quit: q
+    quit-alt1: <c-c>
+    scrollUpMain: <c-u>
+    scrollDownMain: <c-d>
+    scrollUpMain-alt1: K
+    scrollDownMain-alt1: J

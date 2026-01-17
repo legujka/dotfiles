@@ -1,0 +1,14 @@
+# MacOS crap
+.DS_STORE
+
+# Secrets
+.env
+.env.*
+secrets/
+
+# SSH keys
+.ssh/
+*.key
+*.pem
+id_rsa*
+id_ed25519*

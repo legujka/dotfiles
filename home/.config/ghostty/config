@@ -1,0 +1,71 @@
+# ghostty config
+
+# Font
+font-family = Hack Nerd Font Mono
+font-size = 12
+
+# Window
+window-padding-x = 0
+window-padding-y = 0
+macos-titlebar-style = tabs
+window-save-state = always
+
+# MacOS
+macos-option-as-alt = true
+
+# Mouse
+mouse-hide-while-typing = true
+
+# Keymaps for brackets and braces
+keybind = ]=text:{
+keybind = shift+[=text:]
+
+# Tab keymaps
+keybind = super+one=goto_tab:1
+keybind = super+two=goto_tab:2
+keybind = super+three=goto_tab:3
+keybind = super+four=goto_tab:4
+keybind = super+five=goto_tab:5
+keybind = super+six=goto_tab:6
+keybind = super+seven=goto_tab:7
+keybind = super+eight=goto_tab:8
+keybind = super+nine=goto_tab:9
+
+# Theme: Catppuccin Macchiato
+background = #24273a
+foreground = #cad3f5
+selection-background = #f4dbd6
+selection-foreground = #24273a
+cursor-color = #f4dbd6
+
+# black
+palette = 0=#494d64
+palette = 8=#5b6078
+
+# red
+palette = 1=#ed8796
+palette = 9=#ed8796
+
+# green
+palette = 2=#a6da95
+palette = 10=#a6da95
+
+# yellow
+palette = 3=#eed49f
+palette = 11=#eed49f
+
+# blue
+palette = 4=#8aadf4
+palette = 12=#8aadf4
+
+# magenta
+palette = 5=#f5bde6
+palette = 13=#f5bde6
+
+# cyan
+palette = 6=#8bd5ca
+palette = 14=#8bd5ca
+
+# white
+palette = 7=#b8c0e0
+palette = 15=#a5adcb

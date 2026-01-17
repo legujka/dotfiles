@@ -1,0 +1,60 @@
+# Default mode
+:: default : borders active_color=0xffe1e3e4
+
+# Cycle focus
+alt - tab : yabai -m window --focus next || yabai -m window --focus first
+shift + alt - tab : yabai -m window --focus prev || yabai -m window --focus last
+
+# Focus
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+
+# Swap
+shift + alt - h : yabai -m window --swap west
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north
+shift + alt - l : yabai -m window --swap east
+
+# Warp
+ctrl + alt - h : yabai -m window --warp west
+ctrl + alt - j : yabai -m window --warp south
+ctrl + alt - k : yabai -m window --warp north
+ctrl + alt - l : yabai -m window --warp east
+
+# Toggle split
+alt - e : yabai -m window --toggle split
+
+# Fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen
+shift + alt - f : yabai -m window --toggle native-fullscreen
+
+# Balance
+shift + alt - b : yabai -m space --balance
+
+# Restart
+ctrl + alt - r : yabai --restart-service | skhd --restart-service
+
+# Hide
+alt - m : \
+  yabai -m window --minimize;      \
+  yabai -m window --focus mouse || \
+  yabai -m window --focus prev  || \
+  yabai -m window --focus next  || \
+  yabai -m window --focus first || \
+  yabai -m window --focus last
+
+# Resize
+:: resize @ : borders active_color=0xffff00ff
+
+alt - r ; resize
+resize < escape ; default
+
+resize < h : yabai -m window --resize left:-50:0 || yabai -m window --resize right:-50:0
+resize < j : yabai -m window --resize bottom:0:50 || yabai -m window --resize top:0:50
+resize < k : yabai -m window --resize top:0:-50 || yabai -m window --resize bottom:0:-50
+resize < l : yabai -m window --resize right:50:0 || yabai -m window --resize left:50:0
+
+# Float
+alt - t : yabai -m window --toggle float --grid 6:6:1:1:4:4
